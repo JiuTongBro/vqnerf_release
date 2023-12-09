@@ -50,7 +50,7 @@ cd NeuS-ours2
 ln -s <project_root>/data ./
 ```
 
-Then follow the instructions in [geo/NeuS-ours2](https://github.com/JiuTongBro/vqnerf_release/geo/NeuS-ours2).
+Then follow the instructions in [geo/NeuS-ours2](https://github.com/JiuTongBro/vqnerf_release/tree/main/geo/NeuS-ours2).
 
 ## Acknowledgement
 
