@@ -19,7 +19,7 @@ python dtu_runner.py --case <scene_name>
 
 Run the training with the defualt configs may require 48G GPU memory for some scenes. You may reduce the `batch_size` in the config files to avoid OOM. The config files are under `confs/`, you can refer to the `models/helpers.py` for correspondence.
 
-### Generate Geometry
+## Generate Geometry
 
 After training, we need to extract the geometry from different views.
 
