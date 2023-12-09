@@ -37,6 +37,8 @@ python dtu_geo.py --case <scene_name>
 
 As the geometry occlusion in CG data are more complex, to better model the shadows, we also include the visibility term in the rendering of CG scenes. The extraction of the visibility terms is slow (takes several hours or even 1-2 days). And the extracted data takes up a lot stoage (about 50G for one scene with about 100 views).
 
+- (Optional) Accelerations:
+
 You may accelerate it by running the geometry extraction on multiple GPUs, e.g.:
 
 ```shell
