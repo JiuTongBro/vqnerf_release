@@ -1,4 +1,4 @@
-# VQ-NeRF
+# VQ-NeRF: Geometry Reconstruction
 
 This is the folder for Geometry Reconstruction.
 
@@ -44,7 +44,7 @@ CUDA_VISIBLE_DEVICES=0 python gen_geo.py --case <scene_name> --num_p 2 --p_i 0 &
 ```
 This command divides the geomtry extraction into `num_p` parallel tasks, and the `p_i` indicates which subprocesses it is.
 
-The visibility term is only related to the occlussion and shadowing. You may also omit this term, especially in scenes with simple geometry, like in some other methods. This can be a trade off between model accuracy and efficiency:
+The visibility term is only related to the occlussion and shadowing. You may also omit this term, especially in scenes with simple geometry. However, this can be a trade off between model accuracy and efficiency:
 
 ```shell
 python gen_geo.py --case <scene_name> --no_vis
