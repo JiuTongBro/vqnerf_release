@@ -3,6 +3,14 @@
 This is the code release for [VQ-NeRF Home Page](https://jtbzhl.github.io/VQ-NeRF.github.io/).
 
 
+## Acknowledgements
+
+Our codes is mainly built upon the following projects. We sincerely thank their authors firstly:
+- [NeRFactor](https://github.com/google/nerfactor)
+- [NeuS](https://github.com/Totoro97/NeuS)
+- [Sonnet](https://github.com/google-deepmind/sonnet)
+
+
 ## Overview
 
 Clone this repository:
@@ -13,7 +21,7 @@ https://github.com/JiuTongBro/vqnerf_release.git
 
 Our method requires a two-stage running. The first stage is for the geometry reconstruction, and the second stage is for the decomposition and segmentation.
 - The codes for geometry reconstruction are under the `geo/` folder. It is an edited version of [NeuS](https://github.com/Totoro97/NeuS)
-- The codes for decomposition and segmentation are under the `decomp/` folder. It is modified based on [NeRFactor](https://github.com/google/nerfactor).
+- The codes for decomposition and segmentation are under the `decomp/` folder. It is modified based on [NeRFactor](https://github.com/google/nerfactor). This is the main part of our codes.
 
 
 ## Data
@@ -52,12 +60,6 @@ ln -s <project_root>/data ./
 
 Then follow the instructions in [geo/NeuS-ours2](https://github.com/JiuTongBro/vqnerf_release/tree/main/geo/NeuS-ours2).
 
-## Acknowledgement
-
-Our code realization is mainly based on the following projects. We sincerely thank them:
-- [NeRFactor](https://github.com/google/nerfactor)
-- [NeuS](https://github.com/Totoro97/NeuS)
-- [Sonnet](https://github.com/google-deepmind/sonnet)
 
 ## Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
