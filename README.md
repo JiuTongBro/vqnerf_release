@@ -13,7 +13,7 @@ https://github.com/JiuTongBro/vqnerf_release.git
 
 Our method requires a two-stage running. The first stage is for the geometry reconstruction, and the second stage is for the decomposition and segmentation.
 - The codes for geometry reconstruction are under the `geo/` folder. It is an edited version of [NeuS](https://github.com/Totoro97/NeuS)
-- The codes for decomposition and segmentation are under the `decomp/` folder. It is the main part of our method.
+- The codes for decomposition and segmentation are under the `decomp/` folder. It is modified based on [NeRFactor](https://github.com/google/nerfactor).
 
 
 ## Data
