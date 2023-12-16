@@ -36,22 +36,14 @@ For `dtu` and `ours` scenes, run:
 python dtu_geo.py --case <scene_name>
 ```
 
-As the geometry occlusion in CG data are more complex, to better model the shadows, we also include the visibility term in the rendering of CG scenes. The extraction of the visibility terms is slow (takes several hours or even 1-2 days). And the extracted data takes up a lot stoage (about 50G for one scene with about 100 views).
+As the geometry occlusion in CG data are more complex, we also include the visibility term in the rendering of CG scenes to better model the shadows. Pleae reserve enough space to store the extracted data (about 50G for each CG scene).
 
 - (Optional) Accelerations:
 
-You may accelerate it by running the geometry extraction on multiple GPUs, e.g.:
+The extraction of the visibility term may be extremely slow on some scenes. You may accelerate it by running the geometry extraction on multiple GPUs, e.g.:
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python gen_geo.py --case <scene_name> --num_p 2 --p_i 0 & CUDA_VISIBLE_DEVICES=1 python gen_geo.py --case <scene_name> --num_p 2 --p_i 1
 ```
 This command divides the geomtry extraction into `num_p` parallel tasks, and the `p_i` indicates which subprocesses it is.
-
-The visibility term is only related to the occlussion and shadowing. You may also omit this term, especially in scenes with simple geometry. However, this could be a trade off between model accuracy and efficiency:
-
-```shell
-python gen_geo.py --case <scene_name> --no_vis
-```
-
-The geometry extraction for video rendering follows a similar way.
 
