@@ -179,21 +179,6 @@ class Model(ShapeModel):
         else: resized = tensor
 
         return resized
-    '''
-    def adjust_light(self, light, base_inten=1.):
-        # base_inten=1 is useful
-        light_h, light_w = light.shape[:2]
-        light_mean, light_std = np.mean(light), np.std(light)
-        upper_light = cv2.resize(light[:light_h // 2, ...], (light_w, 3 * light_h // 4))
-        lower_light = cv2.resize(light[light_h // 2:, ...], (light_w, light_h // 4))
-        new_light = np.concatenate([upper_light, lower_light], axis=0)
-        new_light = np.clip(new_light, 0., light_mean + 3 * light_std) + base_inten
-        new_light = new_light + base_inten
-        print('Adjust light...')
-        light_mean = np.mean(light)
-        new_light = light + light_mean * 0.5
-        return new_light
-    '''
 
     def init_z(self, batch):
         if self.data_type == 'nerf':
