@@ -5,10 +5,12 @@ This is the code release for [VQ-NeRF Home Page](https://jtbzhl.github.io/VQ-NeR
 
 ## Acknowledgements
 
-Our codes is mainly built upon the following projects. We sincerely thank the authors:
+Our code is mainly built upon the following projects. We sincerely thank the authors:
 - [NeRFactor](https://github.com/google/nerfactor)
 - [NeuS](https://github.com/Totoro97/NeuS)
 - [Sonnet](https://github.com/google-deepmind/sonnet)
+
+Also, we would like to thank all the collaborators who helped with this project.
 
 
 ## Overview
@@ -60,6 +62,7 @@ ln -s <project_root>/data ./
 
 Then follow the instructions in [geo/NeuS-ours2](https://github.com/JiuTongBro/vqnerf_release/tree/main/geo/NeuS-ours2).
 
+
 ## Decomposition and Segmentation
 
 Go to the `decomp/` folder, prepare and activate the environment.
@@ -72,12 +75,35 @@ pip install -r nerfvq_nfr3/requirements.txt # may need some manual adjustments, 
 python check_env.py # Optional, check the environments
 ```
 
-(Optional) In some cases, there may be an issue relevant to CUDA 12:
+(Optional) Check the environment:
+
+```shell
+cd nerfvq_nfr3
+python check_env.py # Optional, check the environments
+cd ../
+```
+
+Then, link the data and the extracted geometry:
+
+```shell
+ln -s <project_root>/data ./
+ln -s <project_root>/geo/NeuS-ours2/surf/* ./nerfvq_nfr3/output/
+cd nerfvq_nfr3
+```
+
+Then follow the instructions in [decomp/nerfvq_nfr3](https://github.com/JiuTongBro/vqnerf_release/tree/main/decomp/nerfvq_nfr3).
+
+
+## FAQ
+
+- In some cases, the environment installation of the `decomp/` may lead to an issue relevant to CUDA 12:
 ```
 Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open shared object file: No such file or directory
 Aborted (core dumped)
 ```
 This suggests that some libs are missed in your CUDA. To avoid mess up your CUDA env, you can manually download and place them, following [this link](https://stackoverflow.com/questions/76646474/could-not-load-library-libcublaslt-so-12-error-libcublaslt-so-12-cannot-open) for solution.
+
+- We've reorganized the codes in the released version for better usage. However, we are truly unable to find time to re-test all our functions on all our data. Shall there be any problem, please open an issue. We will try to assist if we find time.
 
 ## Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
