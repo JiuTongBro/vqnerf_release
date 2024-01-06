@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67e9078d-38fa-48e9-8201-021fa636eac9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../../../results/0118_newmetric/metric_eval.py" />
+        <option value="$PROJECT_DIR$/../../../../results/0118_newmetric/metric_eval_lossab.py" />
+        <option value="$PROJECT_DIR$/old_versions/0621_baseline/vqnfr_baseline.py" />
+        <option value="$PROJECT_DIR$/../../../../results/0118_newmetric/metric_eval_vqvid.py" />
+        <option value="$PROJECT_DIR$/../../render_nfr/data_gen/nerf_synth/render_demo.py" />
+        <option value="$PROJECT_DIR$/../../demo/linear-srgb/demo.py" />
+        <option value="$PROJECT_DIR$/old_versions/0621_baseline/single_dis.py" />
+        <option value="$PROJECT_DIR$/old_versions/0923_baseline/vq_layer_indiv.py" />
+        <option value="$PROJECT_DIR$/gen_main.py" />
+        <option value="$PROJECT_DIR$/old_versions/0923_baseline/vq_nfr_twobranch.py" />
+        <option value="$PROJECT_DIR$/old_versions/0923_baseline/vq_nfr_singledecoder.py" />
+        <option value="$PROJECT_DIR$/../../demo/demo.py" />
+        <option value="$PROJECT_DIR$/nerfactor/networks/vq_layers.py" />
+        <option value="$PROJECT_DIR$/test_demo/demo.py" />
+        <option value="$PROJECT_DIR$/nerfactor/config/vq_nfr.ini" />
+        <option value="$PROJECT_DIR$/../../../../results/0118_newmetric/cluster_eval_ind.py" />
+        <option value="$PROJECT_DIR$/../../../../results/0118_newmetric/cluster_vis.py" />
+        <option value="$PROJECT_DIR$/old_versions/0928_ind1/vq_nfr.py" />
+        <option value="$PROJECT_DIR$/old_versions/0928_ind1/train_nfr.py" />
+        <option value="$PROJECT_DIR$/old_versions/0928_ind1/test.py" />
+        <option value="$PROJECT_DIR$/nerfactor/vis_param_num.py" />
+        <option value="D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/nerfactor/models/vq_nfr.py" />
+        <option value="D:/new_e/cityU_RA/code/server_d/nerf_nfr/thirdparty_test/test.py" />
+        <option value="D:/new_e/cityU_RA/code/server_d/nerf_nfr/thirdparty_test/check_env.py" />
+        <option value="$PROJECT_DIR$/check_env.py" />
+        <option value="$PROJECT_DIR$/nerfactor/datasets/base.py" />
+        <option value="$PROJECT_DIR$/nerfactor/datasets/nerf.py" />
+        <option value="$PROJECT_DIR$/nerfactor/datasets/ref_nfr.py" />
+        <option value="$PROJECT_DIR$/nerfactor/datasets/shape_unit.py" />
+        <option value="$PROJECT_DIR$/nerfactor/datasets/video_nfr.py" />
+        <option value="$PROJECT_DIR$/nerfactor/models/nfr_unit.py" />
+        <option value="$PROJECT_DIR$/nerfactor/models/shape.py" />
+        <option value="$PROJECT_DIR$/nerfactor/models/vq_nfr.py" />
+        <option value="$PROJECT_DIR$/nerfactor/models/ref_nfr.py" />
+        <option value="$PROJECT_DIR$/nerfactor/util/img.py" />
+        <option value="$PROJECT_DIR$/nerfactor/util/io.py" />
+        <option value="$PROJECT_DIR$/nerfactor/util/light.py" />
+        <option value="$PROJECT_DIR$/nerfactor/gen_video.py" />
+        <option value="$PROJECT_DIR$/nerfactor/gen_z.py" />
+        <option value="$PROJECT_DIR$/nerfactor/online_edit.py" />
+        <option value="$PROJECT_DIR$/nerfactor/train_nfr.py" />
+        <option value="$PROJECT_DIR$/nerfactor/trainvali.py" />
+        <option value="$PROJECT_DIR$/brdf/microfacet/microfacet.py" />
+        <option value="$PROJECT_DIR$/data_gen/merl/make_dataset.py" />
+        <option value="$PROJECT_DIR$/data_gen/nerf_real/make_dataset.py" />
+        <option value="$PROJECT_DIR$/data_gen/util.py" />
+        <option value="$PROJECT_DIR$/nerfactor/test.py" />
+        <option value="$PROJECT_DIR$/nerfactor/edit.py" />
+        <option value="$PROJECT_DIR$/eval/metric_eval.py" />
+        <option value="$PROJECT_DIR$/eval/cluster_eval.py" />
+        <option value="$PROJECT_DIR$/ui4.py" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="5" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectId" id="2Rv2ew6oC95hB0nyheHR4R9Uhnz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="nerfvq_nfr3" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="nerfvq_nfr3" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="nerfactor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="nerfvq_nfr3" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="nerfactor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="networks" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nerfvq_nfr3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nerfvq_nfr3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nerfvq_nfr3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nerfvq_nfr3" type="462c0819:PsiDirectoryNode" />
+              <item name="eval" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3\old_versions\0928_ind1" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3\old_versions\0430_gtmask_datasets\datasets" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr2\old_versions\0118_brdf_chunk1" />
+      <recent name="D:\new_e\cityU_RA\code\hwcloud\f-nerf3\myf_nerf9\old_versions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3\nerfactor\config" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3\old_versions\0430_gtmask_datasets\models" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr3\old_versions\0430_gtmask_datasets" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr2\nerfactor\models" />
+      <recent name="D:\new_e\cityU_RA\code\server_d\nerf_nfr\nerfvq_nfr2\nerfactor" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="cluster_vis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../results/0118_newmetric" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../results/0118_newmetric/cluster_vis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../demo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../demo/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo (2)" type="PythonConfigurationType" factoryName="Python">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../demo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\new_e\cityU_RA\code\server_d\demo\vis_z.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../demo/linear-srgb" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../demo/linear-srgb/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../demo/error_analysis" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../demo/error_analysis/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_demo/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/new_e/cityU_RA/code/server_d/nerf_nfr/thirdparty_test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:/new_e/cityU_RA/code/server_d/nerf_nfr/thirdparty_test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nerfactor-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../results/0118_newmetric" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../results/0118_newmetric/vis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.cluster_vis" />
+        <item itemvalue="Python.demo (4)" />
+        <item itemvalue="Python.vis" />
+        <item itemvalue="Python.demo (5)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67e9078d-38fa-48e9-8201-021fa636eac9" name="Default Changelist" comment="" />
+      <created>1626157077821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626157077821</updated>
+      <workItem from="1688116335751" duration="40000" />
+      <workItem from="1688133909008" duration="893000" />
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49433962" visible="true" weight="0.19815059" />
+      <window_info id="Structure" order="1" sideWeight="0.50566036" side_tool="true" weight="0.19815059" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007072" side_tool="true" weight="0.19815059" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24929178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49433962" visible="true" weight="0.19815059" />
+      <window_info id="Structure" order="1" sideWeight="0.50566036" side_tool="true" weight="0.19815059" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007072" side_tool="true" weight="0.19815059" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24929178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/phython/Anaconda3/envs/pytorch_cpu/Lib/site-packages/tensorflow/_api/v2/random/__init__.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nerfactor/util/tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/util/torch_kmeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/util/param_util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/util/microfacet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/util/img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/networks/base.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/gen_z.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/online_edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui4_online.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meanshift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cv2_render.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brdf/merl/merl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1923" />
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/brdf/merl/merl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brdf/microfacet/microfacet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/brdf/microfacet/microfacet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1623" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brdf/renderer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/brdf/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_gen/merl/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/data_gen/merl/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/data_gen/nerf_real/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_gen/nerf_real/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_gen/nerf_synth/render.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_gen/nerf_synth/render_demo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/data_gen/nerf_synth/render.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_gen/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/cmp_models/official/nerfactor-main/data_gen/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5743" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/train_nfr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1594#15517#0" />
+            <element signature="e#1900#2016#0" />
+            <element signature="e#1956#2016#0" />
+            <element signature="e#3898#4013#0" />
+            <element signature="e#4369#4559#0" />
+            <element signature="e#4837#4904#0" />
+            <element signature="e#4935#5003#0" />
+            <element signature="e#5060#5092#0" />
+            <element signature="e#5274#5355#0" />
+            <element signature="e#5802#5885#0" />
+            <element signature="e#7413#7509#0" />
+            <element signature="e#7672#7736#0" />
+            <element signature="e#8064#8845#0" />
+            <element signature="e#8212#8768#0" />
+            <element signature="e#8972#15493#0" />
+            <element signature="e#9198#9659#0" />
+            <element signature="e#9558#9659#0" />
+            <element signature="e#9898#10351#0" />
+            <element signature="e#10126#10351#0" />
+            <element signature="e#10361#10387#0" />
+            <element signature="e#10511#15493#0" />
+            <element signature="e#10748#10841#0" />
+            <element signature="e#11306#12021#0" />
+            <element signature="e#11358#11566#1" />
+            <element signature="e#12232#12386#0" />
+            <element signature="e#12730#13171#0" />
+            <element signature="e#12790#13023#0" />
+            <element signature="e#12895#13023#0" />
+            <element signature="e#12972#13023#0" />
+            <element signature="e#13134#13171#0" />
+            <element signature="e#13337#15493#0" />
+            <element signature="e#13556#13850#0" />
+            <element signature="e#13968#15493#0" />
+            <element signature="e#14157#15493#0" />
+            <element signature="e#14240#14335#0" />
+            <element signature="e#14452#14590#0" />
+            <element signature="e#14649#14840#0" />
+            <element signature="e#15009#15156#0" />
+            <element signature="e#15622#19680#0" />
+            <element signature="e#15797#15881#0" />
+            <element signature="e#16464#16561#0" />
+            <element signature="e#17714#17809#0" />
+            <element signature="e#17828#18157#0" />
+            <element signature="e#18163#18230#0" />
+            <element signature="e#19422#19598#0" />
+            <element signature="e#20031#20206#0" />
+            <element signature="e#20599#21493#0" />
+            <element signature="e#20775#21386#0" />
+            <element signature="e#21003#21297#0" />
+            <element signature="e#21230#21297#0" />
+            <element signature="e#21570#23644#0" />
+            <element signature="e#21785#22979#0" />
+            <element signature="e#23062#23317#0" />
+            <element signature="e#23696#23787#0" />
+            <element signature="e#23858#24562#0" />
+            <element signature="e#24030#24372#0" />
+            <element signature="e#24637#25033#0" />
+            <element signature="e#25095#25333#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/trainvali.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1723#13921#0" />
+            <element signature="e#2276#2392#0" />
+            <element signature="e#2332#2392#0" />
+            <element signature="e#4187#4380#0" />
+            <element signature="e#4417#13921#0" />
+            <element signature="e#4661#4886#0" />
+            <element signature="e#5078#5276#0" />
+            <element signature="e#5581#5652#0" />
+            <element signature="e#5691#5763#0" />
+            <element signature="e#5964#6049#0" />
+            <element signature="e#6536#6623#0" />
+            <element signature="e#7525#7589#0" />
+            <element signature="e#8069#13832#0" />
+            <element signature="e#8266#8377#0" />
+            <element signature="e#8485#9725#0" />
+            <element signature="e#8717#9142#0" />
+            <element signature="e#8774#8928#0" />
+            <element signature="e#8979#9142#0" />
+            <element signature="e#9185#9305#0" />
+            <element signature="e#9483#9516#0" />
+            <element signature="e#9616#9725#0" />
+            <element signature="e#9992#11049#0" />
+            <element signature="e#10240#10907#0" />
+            <element signature="e#10605#10907#0" />
+            <element signature="e#11218#13832#0" />
+            <element signature="e#11461#12127#0" />
+            <element signature="e#11673#11773#0" />
+            <element signature="e#12318#13057#0" />
+            <element signature="e#12427#12812#0" />
+            <element signature="e#12488#12616#0" />
+            <element signature="e#12675#12812#0" />
+            <element signature="e#12863#12968#0" />
+            <element signature="e#13175#13707#0" />
+            <element signature="e#13398#13707#0" />
+            <element signature="e#13989#17932#0" />
+            <element signature="e#14164#14248#0" />
+            <element signature="e#14831#14928#0" />
+            <element signature="e#15966#16061#0" />
+            <element signature="e#16080#16409#0" />
+            <element signature="e#16415#16482#0" />
+            <element signature="e#17674#17850#0" />
+            <element signature="e#17963#18789#0" />
+            <element signature="e#18128#18682#0" />
+            <element signature="e#18299#18593#0" />
+            <element signature="e#18526#18593#0" />
+            <element signature="e#18816#19131#0" />
+            <element signature="e#19320#21288#0" />
+            <element signature="e#19468#20729#0" />
+            <element signature="e#19527#20452#0" />
+            <element signature="e#19556#19810#0" />
+            <element signature="e#19845#20069#0" />
+            <element signature="e#20796#21026#0" />
+            <element signature="e#21046#21288#0" />
+            <element signature="e#21291#21366#0" />
+            <element signature="e#21583#22668#0" />
+            <element signature="e#21613#22419#0" />
+            <element signature="e#21638#21882#0" />
+            <element signature="e#21909#22123#0" />
+            <element signature="e#22762#23357#0" />
+            <element signature="e#22996#23082#0" />
+            <element signature="e#23125#23327#0" />
+            <element signature="e#23194#23287#0" />
+            <element signature="e#23412#23611#0" />
+            <element signature="e#23518#23611#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval/vis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/nerfactor/models/vq_nfr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1001">
+          <caret line="384" column="16" selection-start-line="384" selection-start-column="16" selection-end-line="384" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1420#5327#0" />
+            <element signature="e#2920#3287#1" />
+            <element signature="e#3665#3793#0" />
+            <element signature="e#3904#4108#0" />
+            <element signature="e#3945#4108#0" />
+            <element signature="e#4155#4210#0" />
+            <element signature="e#4532#4652#0" />
+            <element signature="e#4951#5055#0" />
+            <element signature="e#5151#5257#0" />
+            <element signature="e#5367#5426#0" />
+            <element signature="e#5461#6963#0" />
+            <element signature="e#6636#6754#0" />
+            <element signature="e#7020#7495#0" />
+            <element signature="e#7500#8210#1" />
+            <element signature="e#8249#8650#0" />
+            <element signature="e#8693#8960#0" />
+            <element signature="e#9059#10780#0" />
+            <element signature="e#9120#9340#0" />
+            <element signature="e#9367#9581#0" />
+            <element signature="e#9772#9884#0" />
+            <element signature="e#10841#10947#0" />
+            <element signature="e#11276#11518#0" />
+            <element signature="e#11426#11518#0" />
+            <element signature="e#11545#11794#0" />
+            <element signature="e#11698#11794#0" />
+            <element signature="e#12166#12286#0" />
+            <element signature="e#12548#13016#0" />
+            <element signature="e#12586#12702#0" />
+            <element signature="e#13305#13702#0" />
+            <element signature="e#13750#13827#0" />
+            <element signature="e#14403#14587#0" />
+            <element signature="e#14635#14829#0" />
+            <element signature="e#16046#18245#0" />
+            <element signature="e#16111#16353#0" />
+            <element signature="e#16261#16353#0" />
+            <element signature="e#16380#16629#0" />
+            <element signature="e#16533#16629#0" />
+            <element signature="e#16821#16933#0" />
+            <element signature="e#17782#17867#0" />
+            <element signature="e#18325#20744#0" />
+            <element signature="e#18463#18551#0" />
+            <element signature="e#19144#19256#0" />
+            <element signature="e#19882#20001#0" />
+            <element signature="e#20028#20196#0" />
+            <element signature="e#20407#20537#0" />
+            <element signature="e#20837#26759#0" />
+            <element signature="e#20871#21050#1" />
+            <element signature="e#21197#21285#0" />
+            <element signature="e#21935#22047#0" />
+            <element signature="e#22057#22082#0" />
+            <element signature="e#22457#22469#0" />
+            <element signature="e#22958#23081#0" />
+            <element signature="e#23108#23280#0" />
+            <element signature="e#23474#23678#0" />
+            <element signature="e#23903#24022#0" />
+            <element signature="e#24049#24217#0" />
+            <element signature="e#24428#24623#0" />
+            <element signature="e#25203#25310#0" />
+            <element signature="e#25521#25666#0" />
+            <element signature="e#25712#25779#0" />
+            <element signature="e#26001#26577#0" />
+            <element signature="e#26913#28982#0" />
+            <element signature="e#27439#27957#0" />
+            <element signature="e#28154#28461#0" />
+            <element signature="e#28237#28308#0" />
+            <element signature="e#28589#28934#0" />
+            <element signature="e#28676#28749#0" />
+            <element signature="e#29150#29755#0" />
+            <element signature="e#29216#29546#0" />
+            <element signature="e#29800#30398#0" />
+            <element signature="e#29860#30283#0" />
+            <element signature="e#30436#30968#0" />
+            <element signature="e#30499#30787#0" />
+            <element signature="e#31011#31472#0" />
+            <element signature="e#31166#31301#0" />
+            <element signature="e#31536#32241#0" />
+            <element signature="e#31956#32003#0" />
+            <element signature="e#32305#32748#0" />
+            <element signature="e#32471#32514#0" />
+            <element signature="e#32813#33189#0" />
+            <element signature="e#32983#33029#0" />
+            <element signature="e#33258#33402#0" />
+            <element signature="e#33502#35220#0" />
+            <element signature="e#33537#33699#0" />
+            <element signature="e#33966#35018#0" />
+            <element signature="e#35278#39845#0" />
+            <element signature="e#36108#36201#0" />
+            <element signature="e#36228#36279#0" />
+            <element signature="e#36405#36978#0" />
+            <element signature="e#37514#37742#0" />
+            <element signature="e#37811#38469#0" />
+            <element signature="e#38585#39224#0" />
+            <element signature="e#39269#39723#0" />
+            <element signature="e#40023#46773#0" />
+            <element signature="e#40386#40561#0" />
+            <element signature="e#40604#40713#0" />
+            <element signature="e#41119#41156#0" />
+            <element signature="e#42274#43335#0" />
+            <element signature="e#42620#43335#0" />
+            <element signature="e#43440#44115#0" />
+            <element signature="e#43620#44115#0" />
+            <element signature="e#44530#44736#0" />
+            <element signature="e#44802#45030#0" />
+            <element signature="e#45097#45196#0" />
+            <element signature="e#45379#45474#0" />
+            <element signature="e#45552#45862#0" />
+            <element signature="e#45935#46055#0" />
+            <element signature="e#46090#46773#0" />
+            <element signature="e#46090#46157#0" />
+            <element signature="e#46260#46465#0" />
+            <element signature="e#46479#46525#0" />
+            <element signature="e#46821#46940#0" />
+            <element signature="e#46991#47742#0" />
+            <element signature="e#47001#47548#0" />
+            <element signature="e#47796#48397#0" />
+            <element signature="e#47796#47891#1" />
+            <element signature="e#48487#49086#0" />
+            <element signature="e#48749#48840#0" />
+            <element signature="e#48849#48988#1" />
+            <element signature="e#49155#51548#0" />
+            <element signature="e#49288#51038#0" />
+            <element signature="e#49447#49681#0" />
+            <element signature="e#49704#49805#0" />
+            <element signature="e#49932#50065#0" />
+            <element signature="e#50100#50388#0" />
+            <element signature="e#50447#50588#0" />
+            <element signature="e#50623#50927#0" />
+            <element signature="e#51622#54572#0" />
+            <element signature="e#52105#52497#0" />
+            <element signature="e#52745#53382#0" />
+            <element signature="e#52999#53099#0" />
+            <element signature="e#53862#54496#0" />
+            <element signature="e#53980#54070#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/nerfactor/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="214" column="14" selection-start-line="214" selection-start-column="14" selection-end-line="214" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../results/0118_newmetric/metric_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+          <folding>
+            <element signature="e#351#572#1" />
+            <element signature="e#986#1027#0" />
+            <element signature="e#1181#1367#0" />
+            <element signature="e#1396#1588#0" />
+            <element signature="e#1616#1887#0" />
+            <element signature="e#1916#2164#0" />
+            <element signature="e#2194#2452#0" />
+            <element signature="e#2861#3321#0" />
+            <element signature="e#2947#3087#0" />
+            <element signature="e#3106#3283#0" />
+            <element signature="e#3354#4056#0" />
+            <element signature="e#3468#3520#0" />
+            <element signature="e#3539#3588#0" />
+            <element signature="e#4089#4767#0" />
+            <element signature="e#4203#4255#0" />
+            <element signature="e#4274#4323#0" />
+            <element signature="e#4828#5306#0" />
+            <element signature="e#5065#5185#0" />
+            <element signature="e#5689#5785#0" />
+            <element signature="e#5826#6242#0" />
+            <element signature="e#5869#6046#0" />
+            <element signature="e#6073#6242#0" />
+            <element signature="e#6284#6428#0" />
+            <element signature="e#6471#6601#0" />
+            <element signature="e#6649#7190#0" />
+            <element signature="e#6683#6789#0" />
+            <element signature="e#6816#7190#0" />
+            <element signature="e#6861#6948#0" />
+            <element signature="e#6983#7190#0" />
+            <element signature="e#7233#7632#0" />
+            <element signature="e#7317#7539#0" />
+            <element signature="e#7405#7539#0" />
+            <element signature="e#7499#7539#0" />
+            <element signature="e#7799#10051#0" />
+            <element signature="e#7799#7842#0" />
+            <element signature="e#7997#8081#0" />
+            <element signature="e#8127#8201#0" />
+            <element signature="e#8242#8306#0" />
+            <element signature="e#8348#8407#0" />
+            <element signature="e#8455#8515#0" />
+            <element signature="e#8558#8622#0" />
+            <element signature="e#8663#8752#0" />
+            <element signature="e#8954#9074#0" />
+            <element signature="e#9100#9212#0" />
+            <element signature="e#9281#9646#0" />
+            <element signature="e#9799#9896#0" />
+            <element signature="e#9915#9978#0" />
+            <element signature="e#10183#12273#0" />
+            <element signature="e#10183#10226#0" />
+            <element signature="e#10546#10624#0" />
+            <element signature="e#10672#10750#0" />
+            <element signature="e#10793#10877#0" />
+            <element signature="e#11159#11299#0" />
+            <element signature="e#11325#11434#0" />
+            <element signature="e#11503#11868#0" />
+            <element signature="e#12021#12118#0" />
+            <element signature="e#12137#12200#0" />
+            <element signature="e#12376#13795#0" />
+            <element signature="e#12376#12419#0" />
+            <element signature="e#13088#13158#0" />
+            <element signature="e#13268#13633#0" />
+            <element signature="e#13854#14420#0" />
+            <element signature="e#13883#13995#0" />
+            <element signature="e#14067#14333#0" />
+            <element signature="e#14460#16020#0" />
+            <element signature="e#14982#15042#0" />
+            <element signature="e#15061#15147#0" />
+            <element signature="e#15183#15550#0" />
+            <element signature="e#15799#15877#0" />
+            <element signature="e#16086#18168#0" />
+            <element signature="e#16086#16129#0" />
+            <element signature="e#16320#16404#0" />
+            <element signature="e#16450#16524#0" />
+            <element signature="e#16565#16629#0" />
+            <element signature="e#16671#16730#0" />
+            <element signature="e#16778#16838#0" />
+            <element signature="e#16881#16945#0" />
+            <element signature="e#16986#17075#0" />
+            <element signature="e#17307#17427#0" />
+            <element signature="e#17581#18051#0" />
+            <element signature="e#18245#19167#0" />
+            <element signature="e#18305#19010#0" />
+            <element signature="e#18830#19010#0" />
+            <element signature="e#19204#19285#0" />
+            <element signature="e#21725#22073#0" />
+            <element signature="e#22109#23452#0" />
+            <element signature="e#22404#22755#0" />
+            <element signature="e#23092#23452#0" />
+            <element signature="e#23582#24659#0" />
+            <element signature="e#23623#24659#0" />
+            <element signature="e#23676#23803#0" />
+            <element signature="e#23846#23989#0" />
+            <element signature="e#24123#24659#0" />
+            <element signature="e#24681#24793#0" />
+            <element signature="e#24926#25199#0" />
+            <element signature="e#25243#25434#0" />
+            <element signature="e#25504#26881#0" />
+            <element signature="e#25921#26135#0" />
+            <element signature="e#26177#26618#0" />
+            <element signature="e#26666#26881#0" />
+            <element signature="e#27173#27225#0" />
+            <element signature="e#27313#27530#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/online_edit.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/edit_run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/gen_video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="259" column="50" lean-forward="true" selection-start-line="259" selection-start-column="50" selection-end-line="259" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1799#4373#0" />
+            <element signature="e#1799#1916#1" />
+            <element signature="e#2207#2303#0" />
+            <element signature="e#2429#4211#0" />
+            <element signature="e#3353#3548#0" />
+            <element signature="e#4031#4211#0" />
+            <element signature="e#4401#4542#0" />
+            <element signature="e#4456#4526#0" />
+            <element signature="e#5815#6619#0" />
+            <element signature="e#6289#6619#0" />
+            <element signature="e#6660#8105#0" />
+            <element signature="e#7669#8105#0" />
+            <element signature="e#8979#9942#0" />
+            <element signature="e#10736#11364#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/datasets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/models/ref_nfr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="405" column="8" lean-forward="true" selection-start-line="405" selection-start-column="8" selection-end-line="405" selection-end-column="8" />
+          <folding>
+            <element signature="e#643#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/models/vq_nfr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="278" column="58" lean-forward="true" selection-start-line="278" selection-start-column="58" selection-end-line="278" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1451#5358#0" />
+            <element signature="e#2951#3318#1" />
+            <element signature="e#3696#3824#0" />
+            <element signature="e#3935#4139#0" />
+            <element signature="e#3976#4139#0" />
+            <element signature="e#4186#4241#0" />
+            <element signature="e#4563#4683#0" />
+            <element signature="e#4982#5086#0" />
+            <element signature="e#5182#5288#0" />
+            <element signature="e#5398#5457#0" />
+            <element signature="e#5492#6994#0" />
+            <element signature="e#6667#6785#0" />
+            <element signature="e#7051#7526#0" />
+            <element signature="e#7531#8241#1" />
+            <element signature="e#8280#8681#0" />
+            <element signature="e#8724#8991#0" />
+            <element signature="e#9090#10811#0" />
+            <element signature="e#9151#9371#0" />
+            <element signature="e#9398#9612#0" />
+            <element signature="e#9803#9915#0" />
+            <element signature="e#10872#10978#0" />
+            <element signature="e#11307#11549#0" />
+            <element signature="e#11457#11549#0" />
+            <element signature="e#11576#11825#0" />
+            <element signature="e#11729#11825#0" />
+            <element signature="e#12197#12317#0" />
+            <element signature="e#12579#13047#0" />
+            <element signature="e#12617#12733#0" />
+            <element signature="e#13336#13733#0" />
+            <element signature="e#14434#14618#0" />
+            <element signature="e#14666#14860#0" />
+            <element signature="e#15201#15289#0" />
+            <element signature="e#16077#18276#0" />
+            <element signature="e#16142#16384#0" />
+            <element signature="e#16292#16384#0" />
+            <element signature="e#16411#16660#0" />
+            <element signature="e#16564#16660#0" />
+            <element signature="e#16852#16964#0" />
+            <element signature="e#17813#17898#0" />
+            <element signature="e#18356#20775#0" />
+            <element signature="e#18494#18582#0" />
+            <element signature="e#19175#19287#0" />
+            <element signature="e#19913#20032#0" />
+            <element signature="e#20059#20227#0" />
+            <element signature="e#20438#20568#0" />
+            <element signature="e#20868#26790#0" />
+            <element signature="e#20902#21081#1" />
+            <element signature="e#21228#21316#0" />
+            <element signature="e#21966#22078#0" />
+            <element signature="e#22088#22113#0" />
+            <element signature="e#22488#22500#0" />
+            <element signature="e#22989#23112#0" />
+            <element signature="e#23139#23311#0" />
+            <element signature="e#23505#23709#0" />
+            <element signature="e#23934#24053#0" />
+            <element signature="e#24080#24248#0" />
+            <element signature="e#24459#24654#0" />
+            <element signature="e#25234#25341#0" />
+            <element signature="e#25552#25697#0" />
+            <element signature="e#25743#25810#0" />
+            <element signature="e#26032#26608#0" />
+            <element signature="e#26944#28524#0" />
+            <element signature="e#27470#27988#0" />
+            <element signature="e#28135#28480#0" />
+            <element signature="e#28222#28295#0" />
+            <element signature="e#28692#29297#0" />
+            <element signature="e#28758#29088#0" />
+            <element signature="e#29342#29940#0" />
+            <element signature="e#29402#29825#0" />
+            <element signature="e#29978#30510#0" />
+            <element signature="e#30041#30329#0" />
+            <element signature="e#30553#31014#0" />
+            <element signature="e#30708#30843#0" />
+            <element signature="e#31078#31783#0" />
+            <element signature="e#31498#31545#0" />
+            <element signature="e#31847#32290#0" />
+            <element signature="e#32013#32056#0" />
+            <element signature="e#32355#32731#0" />
+            <element signature="e#32525#32571#0" />
+            <element signature="e#32800#32944#0" />
+            <element signature="e#33044#34762#0" />
+            <element signature="e#33079#33241#0" />
+            <element signature="e#33508#34560#0" />
+            <element signature="e#34820#39387#0" />
+            <element signature="e#35650#35743#0" />
+            <element signature="e#35770#35821#0" />
+            <element signature="e#35947#36520#0" />
+            <element signature="e#37056#37284#0" />
+            <element signature="e#37353#38011#0" />
+            <element signature="e#38127#38766#0" />
+            <element signature="e#38811#39265#0" />
+            <element signature="e#39681#40255#0" />
+            <element signature="e#39928#40103#0" />
+            <element signature="e#40146#40255#0" />
+            <element signature="e#40329#40393#0" />
+            <element signature="e#40661#40698#0" />
+            <element signature="e#41816#42877#0" />
+            <element signature="e#42162#42877#0" />
+            <element signature="e#42982#43657#0" />
+            <element signature="e#43162#43657#0" />
+            <element signature="e#44072#44278#0" />
+            <element signature="e#44344#44572#0" />
+            <element signature="e#44639#44738#0" />
+            <element signature="e#44921#45016#0" />
+            <element signature="e#45094#45404#0" />
+            <element signature="e#45477#45597#0" />
+            <element signature="e#45632#46315#0" />
+            <element signature="e#45632#45699#0" />
+            <element signature="e#45802#46007#0" />
+            <element signature="e#46021#46067#0" />
+            <element signature="e#46363#46482#0" />
+            <element signature="e#46533#47284#0" />
+            <element signature="e#46543#47090#0" />
+            <element signature="e#47338#47939#0" />
+            <element signature="e#47338#47433#1" />
+            <element signature="e#48029#48628#0" />
+            <element signature="e#48291#48382#0" />
+            <element signature="e#48391#48530#1" />
+            <element signature="e#48697#51090#0" />
+            <element signature="e#48830#50580#0" />
+            <element signature="e#48989#49223#0" />
+            <element signature="e#49246#49347#0" />
+            <element signature="e#49474#49607#0" />
+            <element signature="e#49642#49930#0" />
+            <element signature="e#49989#50130#0" />
+            <element signature="e#50165#50469#0" />
+            <element signature="e#51164#54114#0" />
+            <element signature="e#51647#52039#0" />
+            <element signature="e#52287#52924#0" />
+            <element signature="e#52541#52641#0" />
+            <element signature="e#53404#54038#0" />
+            <element signature="e#53522#53612#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/ui3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9217">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval/metric_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#351#572#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval/cluster_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/nerfactor/online_edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1740" />
+      </provider>
+    </entry>
+    <entry file="file://D:/new_e/cityU_RA/code/server_d/nerf_nfr/nerfvq_nfr3/ui4_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="225" column="43" selection-start-line="225" selection-start-column="43" selection-end-line="225" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1799#4374#0" />
+            <element signature="e#1799#1916#1" />
+            <element signature="e#2208#2304#0" />
+            <element signature="e#2430#4212#0" />
+            <element signature="e#3354#3549#0" />
+            <element signature="e#4032#4212#0" />
+            <element signature="e#4402#4543#0" />
+            <element signature="e#4457#4527#0" />
+            <element signature="e#9166#9576#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="384" column="24" lean-forward="true" selection-start-line="384" selection-start-column="24" selection-end-line="384" selection-end-column="24" />
+          <folding>
+            <element signature="e#333#4150#0" />
+            <element signature="e#1267#1305#0" />
+            <element signature="e#1645#2007#0" />
+            <element signature="e#2031#3899#0" />
+            <element signature="e#4183#12397#0" />
+            <element signature="e#12439#12639#0" />
+            <element signature="e#12676#12923#0" />
+            <element signature="e#12979#13505#0" />
+            <element signature="e#13538#14079#0" />
+            <element signature="e#14116#14385#0" />
+            <element signature="e#14422#14691#0" />
+            <element signature="e#14728#14997#0" />
+            <element signature="e#15102#15876#0" />
+            <element signature="e#15673#15853#0" />
+            <element signature="e#16302#16353#0" />
+            <element signature="e#16431#16659#0" />
+            <element signature="e#16489#16659#0" />
+            <element signature="e#16956#18355#0" />
+            <element signature="e#17080#17564#0" />
+            <element signature="e#17633#17776#0" />
+            <element signature="e#17844#18201#0" />
+            <element signature="e#18442#18569#0" />
+            <element signature="e#18633#19018#0" />
+            <element signature="e#19137#19334#0" />
+            <element signature="e#20208#20504#0" />
+            <element signature="e#20576#20872#0" />
+            <element signature="e#20944#21240#0" />
+            <element signature="e#21246#21359#0" />
+            <element signature="e#22048#22419#0" />
+            <element signature="e#23189#23293#0" />
+            <element signature="e#23627#24178#0" />
+            <element signature="e#24010#24178#0" />
+            <element signature="e#25475#25982#0" />
+            <element signature="e#26025#26305#0" />
+            <element signature="e#26111#26270#0" />
+            <element signature="e#16847#16934#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerfactor/edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-963">
+          <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#1184#3752#0" />
+            <element signature="e#1184#1301#1" />
+            <element signature="e#1586#1682#0" />
+            <element signature="e#1808#3590#0" />
+            <element signature="e#2732#2927#0" />
+            <element signature="e#3410#3590#0" />
+            <element signature="e#3780#3921#0" />
+            <element signature="e#3835#3905#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../thirdparty_test/check_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
