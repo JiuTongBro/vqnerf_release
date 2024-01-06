@@ -39,7 +39,7 @@ from nerfactor.util import vis as visutil, config as configutil, \
 '''
 Directly baking a residual on RGB is difficult, so we implicitly bake it into the ‘updated’ BRDF attributes. In testing, 
 the 'updated' BRDFs are just used to generate the reconstructed RGBs of the original scene. They will not update the 
-results for the decomposition, segmentation and relighting, as the residual is relevant to the original lighting.
+results of the decomposition, segmentation and relighting, as the residual is relevant to the original lighting.
 '''
 
 class Model(ShapeModel):
