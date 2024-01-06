@@ -36,6 +36,11 @@ from nerfactor.util import vis as visutil, config as configutil, \
     io as ioutil, tensor as tutil, light as lightutil, img as imgutil, \
     math as mathutil, geom as geomutil, microfacet as micro_util
 
+'''
+Directly baking a residual on RGB is difficult, so we implicitly bake it into the ‘updated’ BRDF attributes. In testing, 
+the 'updated' BRDFs are just used to generate the reconstructed RGBs of the original scene. They will not update the 
+results for the decomposition, segmentation and relighting, as the residual is relevant to the original lighting.
+'''
 
 class Model(ShapeModel):
     def __init__(self, config, debug=False):
@@ -167,17 +172,7 @@ class Model(ShapeModel):
         tensor = tf.convert_to_tensor(arr, dtype=tf.float32)
         resized = imgutil.resize(tensor, new_h=self.light_res[0])
         return resized
-    '''
-    def adjust_light(self, light, base_inten=0.4):
-        print('Adjust light...')
-        light_h, light_w = light.shape[:2]
-        light_mean, light_std = np.mean(light), np.std(light)
-        upper_light = cv2.resize(light[:light_h // 2, ...], (light_w, 3 * light_h // 4))
-        lower_light = cv2.resize(light[light_h // 2:, ...], (light_w, light_h // 4))
-        new_light = np.concatenate([upper_light, lower_light], axis=0)
-        new_light = np.clip(new_light, 0., light_mean + 3 * light_std) + base_inten
-        return new_light
-    '''
+
     def call(
             self, batch, mode='train', relight_olat=False, relight_probes=False,
             save_z=False, opt_scale=None, bias_weight=None):
