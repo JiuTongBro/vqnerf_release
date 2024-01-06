@@ -23,7 +23,7 @@ More explanations can be found in [scripts/](https://github.com/JiuTongBro/vqner
 ## Evaluation
 
 ```shell
-# You may need to first configure the paths in the python files
+# Firstly, you may need to configure the paths and flags in the python files
 python eval/metric_eval.py <dataset_type> ref_nfr # reconstruction, decomposition and relighting evaluation
 python eval/cluster_eval.py # segmentation evaluation, only the nerf dataset has GT.
 # e.g. python eval/metric_eval.py nerf ref_nfr
