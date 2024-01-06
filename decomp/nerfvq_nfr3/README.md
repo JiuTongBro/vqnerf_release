@@ -38,7 +38,7 @@ To run our editing UI, you need a local computer and a remote server.
 
 First, prepare a local cache folder, download the generated `pd_vq/` folder to local and rename it to `pd_comps/`. Then download the `data/test_envs/vis/` to this local directory too.
 
-Then, run the following command to make the server ready for editing:
+Then, run the following command on the server to make the server ready for editing:
 
 ```shell
 bash scripts/edit.sh <scene_name> <gpu>
