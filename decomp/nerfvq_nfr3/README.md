@@ -47,7 +47,7 @@ bash scripts/edit.sh <scene_name> <gpu>
 Afterwards, configure the parameters and paths in the `__init__()` of `ui4.py`, inlcuding:
 
 - `scene`: the edited scene name.
-- `self.defaulf_folder`: the path of your local cache folder.
+- `self.local_folder`: the path of your local cache folder.
 - `self.server_root`: the path of the code root on your server.
 - the sever IP, username and pwd in `ssh.connect`.
 
