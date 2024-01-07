@@ -2,6 +2,8 @@
 
 This is the code release for [VQ-NeRF Home Page](https://jtbzhl.github.io/VQ-NeRF.github.io/).
 
+* Now the code is still under testing.
+
 
 ## Acknowledgements
 
