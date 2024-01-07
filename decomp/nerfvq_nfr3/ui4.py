@@ -37,14 +37,6 @@ class EditingWindow(QWidget):
         self.default_views = ['batch000000000', 'batch000000001', 'batch000000002']
         self.img_size = (280, 280)
         self.env_size = (200, 60)
-        # self.img_size = (315, 420) # hwchair
-        # self.img_size = (746, 420)
-        # self.img_size = (631, 420) # ours
-        # self.img_size = (682, 512) # dtu
-        # self.img_size = (420, 420) # mat
-        # self.img_size = (512, 512) # nerf
-        # self.img_size = (560, 420) # tools2, redcar
-        # self.img_size = (196, 420) # toyrabbit
 
         self.prop_map = {'rgb': 'pred_rgb.png', 'diff': 'pred_albedo.png', 'spec': 'pred_spec.png',
                     'rough': 'pred_rough.png', 'mat': 'mat', 'embed': 'embed_map.png',
