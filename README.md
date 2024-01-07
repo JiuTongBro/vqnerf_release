@@ -78,7 +78,6 @@ cd decomp
 conda create --prefix="./decomp_env" python=3.6
 conda activate ./decomp_env
 pip install -r nerfvq_nfr3/requirements.txt # may need some manual adjustments, like the torch-cuda correspondence
-python check_env.py # Optional, check the environments
 ```
 
 (Optional) Check the environment:
