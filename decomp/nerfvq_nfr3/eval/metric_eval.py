@@ -205,7 +205,7 @@ def init_dict(relight=eval_relight, eval_kd=eval_kd):
 
     return metric
 
-# only in Effective Pixels, other parts are white bg
+
 def get_scene(pred_root, model_name):
     print(scene, '......')
 
