@@ -7,7 +7,7 @@ This is the code release for [VQ-NeRF Home Page](https://jtbzhl.github.io/VQ-NeR
 
 ## Acknowledgements
 
-Our code is mainly built upon the following projects. We sincerely thank the authors:
+Our code is mainly built upon the following projects. We sincerely thank their authors:
 - [NeRFactor](https://github.com/google/nerfactor)
 - [NeuS](https://github.com/Totoro97/NeuS)
 - [Sonnet](https://github.com/google-deepmind/sonnet)
