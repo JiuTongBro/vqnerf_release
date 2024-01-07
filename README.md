@@ -15,10 +15,12 @@ Also, we would like to thank all the collaborators who helped with this project.
 
 ## Overview
 
-Clone this repository:
+Clone this repository and rename it:
 
 ```shell
-https://github.com/JiuTongBro/vqnerf_release.git
+git clone https://github.com/JiuTongBro/vqnerf_release.git
+mv vqnerf_release vqnfr_pro_release
+cd vqnfr_pro_release
 ```
 
 Our method requires a two-stage running. The first stage is for the geometry reconstruction, and the second stage is for the decomposition and segmentation.
