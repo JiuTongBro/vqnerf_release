@@ -647,6 +647,7 @@ def process_scene(scene):
                 gt = load_img(rgba_view, gt_mask, new_w=new_w)
                 write_img(os.path.join(vis_dir, 'gt_rgb.png'), gt)
 
+                # Align, following NeRFactor
                 pd = alpha_blend(pd, raw_mask)
                 gt = alpha_blend(gt, raw_mask)
 
