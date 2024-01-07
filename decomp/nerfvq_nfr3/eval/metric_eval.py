@@ -43,13 +43,17 @@ dataset = sys.argv[1]
 model_name = sys.argv[2]
 print(dataset, model_name)
 
+proj_root = '/home/zhonghongliang/vqnfr_pro_release/decomp/'
 # ref_nfr,nvmc,nv,neilf,nfr,pil,base_nfr
+'''
 if model_name == 'base_nfr':
     pred_root = '/data1/zhl/cmp_results/tvcg/nfr300'
 else: pred_root = '/data1/zhl/cmp_results/tvcg/cmps/' + model_name
-out_root = '/data1/zhl/cmp_results/tvcg/demo/' + dataset
-vis_root = '/data1/zhl/cmp_results/tvcg/demo/' + dataset
-proj_root = '/home/zhonghongliang/vqnfr_pro_release/decomp/'
+'''
+pred_root = proj_root + 'nerfvq_nfr3/output/train' # output path to our model
+out_root = proj_root + 'cmp_results/' + dataset
+vis_root = proj_root + 'cmp_results/' + dataset
+
 
 if model_name == 'base_nfr':
     eval_rgb = False

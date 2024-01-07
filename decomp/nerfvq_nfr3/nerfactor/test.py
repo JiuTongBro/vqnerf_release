@@ -181,6 +181,7 @@ def main(_):
     for batch_i, batch in enumerate(
             tqdm(datapipe, desc="Inferring Views", total=n_views)):
 
+        # Write results with residual
         _, _, _, to_vis = model.fast_render(
             batch, mode='test', opt_scale=opt_scale)
         # Visualize
@@ -188,6 +189,7 @@ def main(_):
         if not exists(outdir_scaled): makedirs(outdir_scaled)
         model.vis_batch(to_vis, outdir_scaled, mode='test')
 
+        # Update BRDFs without residual, the RGBs are not updated as dst_env=None
         _, _, _, to_vis = vq_model.fast_render(
             batch, mode='test', opt_scale=opt_scale,
             ref_batch=True)
@@ -216,6 +218,7 @@ def main(_):
     for batch_i, batch in enumerate(
             tqdm(datapipe, desc="Inferring Views", total=n_views)):
 
+        # Write results with residual
         _, _, _, to_vis = model.fast_render(
             batch, mode='test', opt_scale=None) # Reconstruction result needs no scale
         # Visualize
@@ -223,6 +226,7 @@ def main(_):
         if not exists(outdir_scaled): makedirs(outdir_scaled)
         model.vis_batch(to_vis, outdir_scaled, mode='test')
 
+        # Update BRDFs without residual, the RGBs are not updated as dst_env=None
         _, _, _, to_vis = vq_model.fast_render(
             batch, mode='test', opt_scale=opt_scale,
             ref_batch=True)
