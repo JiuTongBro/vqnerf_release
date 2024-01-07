@@ -949,7 +949,7 @@ class Model(ShapeModel):
             loss += loss_dict['chr_smooth']
 
         # A minor loss that prevents the VQ centers to be too close. 
-        if sim_loss_weight > 0:
+        if sim_loss_weight > 0:  # 1e-4 by default
             codebook = tf.transpose(self.get_codebook())
             c1 = tf.repeat(codebook[:, None, :], self.num_embed, axis=1)
             c2 = tf.repeat(codebook[None, :, :], self.num_embed, axis=0)  # n,n,d
