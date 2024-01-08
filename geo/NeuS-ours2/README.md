@@ -44,6 +44,7 @@ As the geometry occlusion in CG data is more complex, we also include the visibi
 The extraction of the visibility term could be slow. You may accelerate it by running the geometry extraction on multiple GPUs, e.g.:
 
 ```shell
+# currently only supported by gen_geo.py
 CUDA_VISIBLE_DEVICES=0 python gen_geo.py --case <scene_name> --num_p 2 --p_i 0 & CUDA_VISIBLE_DEVICES=1 python gen_geo.py --case <scene_name> --num_p 2 --p_i 1
 ```
 This command divides the geomtry extraction into `num_p` parallel tasks, and the `p_i` indicates which subprocesses it is.
