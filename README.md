@@ -78,7 +78,15 @@ cd decomp
 conda create --prefix="./decomp_env" python=3.6
 conda activate ./decomp_env
 pip install -r nerfvq_nfr3/requirements.txt # may need some manual adjustments, like the torch-cuda correspondence
+pip install opencv-python==4.5.4.60
 ```
+
+- In some cases, the environment installation of the `decomp/` may lead to an issue relevant to CUDA 12:
+```
+Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open shared object file: No such file or directory
+Aborted (core dumped)
+```
+This suggests that some libs are missed in your CUDA. To avoid mess up your CUDA env, you can manually download and place them, following [this link](https://stackoverflow.com/questions/76646474/could-not-load-library-libcublaslt-so-12-error-libcublaslt-so-12-cannot-open) for solution.
 
 (Optional) Check the environment:
 
@@ -100,13 +108,6 @@ Then follow the instructions in [decomp/nerfvq_nfr3](https://github.com/JiuTongB
 
 
 ## FAQ
-
-- In some cases, the environment installation of the `decomp/` may lead to an issue relevant to CUDA 12:
-```
-Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open shared object file: No such file or directory
-Aborted (core dumped)
-```
-This suggests that some libs are missed in your CUDA. To avoid mess up your CUDA env, you can manually download and place them, following [this link](https://stackoverflow.com/questions/76646474/could-not-load-library-libcublaslt-so-12-error-libcublaslt-so-12-cannot-open) for solution.
 
 - We've reorganized the codes in the released version for better usage. However, we are truly unable to find time to re-test all our functions on all our data. Shall there be any problem, please open an issue. We will try to assist if we find time.
 

@@ -13,6 +13,13 @@ bash scripts/test.sh <scene_name> <gpu> # testing
 # e.g. bash scripts/train.sh drums_3072 0
 ```
 
+- If you run into problems with the `.sh` permissions (Permission denied), go to the corresponding folder, and run:
+
+```shell
+chmod 777 *.sh
+```
+
+After training and testing:
 - The reconstruction and decomposition results can be found in `output/train/<scene_name>_ref_nfr/lr<lr>/pd_test`
 - The relighting results can be found in `output/train/<scene_name>_ref_nfr/lr<lr>/pd_relit`
 - The segmentation results can be found in `output/train/<scene_name>_ref_nfr/lr<lr>/pd_vq`
