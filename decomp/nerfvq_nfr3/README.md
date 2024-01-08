@@ -16,6 +16,7 @@ bash scripts/test.sh <scene_name> <gpu> # testing
 - If you run into problems with the `.sh` permissions (Permission denied), go to the corresponding folder, and run:
 
 ```shell
+# sed -i 's/\r//' *.sh, this is used to align the Windows .sh format to Linux (Optional, handling '/r')
 chmod 777 *.sh
 ```
 
