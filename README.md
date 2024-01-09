@@ -109,7 +109,7 @@ Then follow the instructions in [decomp/nerfvq_nfr3](https://github.com/JiuTongB
 
 ## FAQ
 
-- We've reorganized the codes in the released version for better usage. However, we are truly unable to find time to re-test all our functions on all our data. Shall there be any problem, please open an issue. We will try to assist if we find time.
+- For the convenience of releasement, the codes, weights, and dependencies have been re-collected and re-organized. However, we are truly unable to find time to re-test all our functions on all our data. Shall there be any problem, please open an issue. We will try to assist if we find time.
 
 ## Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
