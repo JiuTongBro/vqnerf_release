@@ -263,7 +263,7 @@ class Model(ShapeModel):
             self, batch, mode='train',
             relight_olat=False, relight_probes=False, opt_scale=None,
             edit_mask=None, edit_material=None, ref_batch=False, dst_env=None,
-            gen_embed=False, thres=None, ):
+            gen_embed=False, thres=None, vis_scale=False):
 
         self._validate_mode(mode)
 
@@ -329,7 +329,7 @@ class Model(ShapeModel):
             if not edit_material['rough'][0] < 0:
                 rough = self._update_material(rough, edit_mask, edit_material['rough'])
 
-        if opt_scale is not None:
+        if (opt_scale is not None) and (not vis_scale):
             scaled_albedo = albedo * opt_scale
             scaled_spec = spec * opt_scale
         else: scaled_albedo, scaled_spec = albedo, spec
@@ -358,12 +358,19 @@ class Model(ShapeModel):
                 ind, rgb_probes, (n, len(self.novel_probes), 3))
         rgb = tf.scatter_nd(ind, rgb, (n, 3))
 
+        if (opt_scale is not None) and vis_scale:
+            basecolor = imgutil.linear2srgb(basecolor)
+            basecolor = basecolor * opt_scale
+            spec = imgutil.linear2srgb(spec)
+            spec = spec * opt_scale
+
+        basecolor = tf.scatter_nd(ind, basecolor, (n, 3))
         albedo = tf.scatter_nd(ind, albedo, (n, 3))
         spec = tf.scatter_nd(ind, spec, (n, 3))
         rough = tf.scatter_nd(ind, rough, (n, 1))
 
         # ------ Loss
-        pred = {'alpha': pred_alpha, 'albedo': albedo, 'spec': spec, 'rough': rough}
+        pred = {'alpha': pred_alpha, 'basecolor': basecolor, 'albedo': albedo, 'spec': spec, 'rough': rough}
 
         if gen_embed:
             embed = tf.scatter_nd(ind, embed_ind[:, None], (n, 1))

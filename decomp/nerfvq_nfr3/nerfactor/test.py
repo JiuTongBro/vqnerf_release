@@ -213,7 +213,7 @@ def main(_):
     vq_model = Model(vq_config, debug=FLAGS.debug)
     ioutil.restore_model(vq_model, vq_ckpt_path)
 
-    outroot = outroot.replace('vis_test', 'pd_test')
+    outroot = outroot.replace('raw_test', 'pd_test')
 
     for batch_i, batch in enumerate(
             tqdm(datapipe, desc="Inferring Views", total=n_views)):
@@ -228,8 +228,7 @@ def main(_):
 
         # Update BRDFs without residual, the RGBs are not updated as dst_env=None
         _, _, _, to_vis = vq_model.fast_render(
-            batch, mode='test', opt_scale=opt_scale,
-            ref_batch=True)
+            batch, mode='test', opt_scale=opt_scale, ref_batch=True, vis_scale=True)
         # Visualize
         vq_model.vis_batch(to_vis, outdir_scaled, mode='test')
 
@@ -250,7 +249,7 @@ def main(_):
     vq_model = Model(vq_config, debug=FLAGS.debug)
     ioutil.restore_model(vq_model, vq_ckpt_path)
 
-    outroot = outroot.replace('vis_test', 'pd_relit')
+    outroot = outroot.replace('pd_test', 'pd_relit')
 
     for batch_i, batch in enumerate(
             tqdm(datapipe, desc="Inferring Views", total=n_views)):
@@ -289,7 +288,7 @@ def main(_):
     num_embed = vq_config.getint('DEFAULT', 'num_embed')
     thres = np.array([0.] * n_vq + [1.] * (num_embed - n_vq))
 
-    outroot = outroot.replace('vis_test', 'pd_vq')
+    outroot = outroot.replace('pd_relit', 'pd_vq')
 
     for batch_i, batch in enumerate(
             tqdm(datapipe, desc="Inferring Views", total=n_views)):
