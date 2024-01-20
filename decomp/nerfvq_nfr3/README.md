@@ -7,7 +7,7 @@ The training, testing and editing scripts are `train.sh`, `test.sh` and `edit.sh
 
 ## Training and Testing
 
-- To use our [pretrained weights](https://drive.google.com/drive/folders/1CEH4WB70GYb4Swnj0In_dgz2xRqbAb-v?usp=sharing), put the files under the `output` folder to the `output` folder of this directory. Then run the following command to correct the configured paths of the pretrained outputs:
+- To use our [pretrained weights](https://drive.google.com/drive/folders/1CEH4WB70GYb4Swnj0In_dgz2xRqbAb-v?usp=sharing), put the files under the `output/` folder to the `output/` folder of this directory. Then run the following command to correct the configured paths of the pretrained outputs:
 
 ```shell
 python correct_config.py <decomp_proj_root>
