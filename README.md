@@ -41,7 +41,7 @@ There are five types of datasets:
 
 The coordinate system for `nerf`, `mat` and `hw` dataset follows NeRF-Blender, while the coordinate system for `dtu` and `ours` dataset follows NeuS-DTU.
 
-The `data/test_envs` stores a total of 16 envrionment maps for relighting. Eight of them are released by the [nvdiffrec](https://github.com/NVlabs/nvdiffrec), and the other eight are collected by us. For some types of the datasets, we flipped those illumination, as the 'upper' direction is reversed in those scenes.
+The `data/test_envs` stores a total of 16 envrionment maps for relighting. Eight of them are released by the [nvdiffrec](https://github.com/NVlabs/nvdiffrec), and the other eight are collected by us. For some types of the datasets, we flipped those illumination, as the 'upper' direction is reversed in their coordinates.
 
 
 ## Pretrained Weights
