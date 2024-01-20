@@ -32,6 +32,20 @@ from third_party.xiuminglib import xiuminglib as xm
 from third_party.turbo_colormap import turbo_colormap_data, interpolate_or_clip
 import os
 
+flags.DEFINE_string(
+    'ckpt', '/path/to/ckpt-100', "path to checkpoint (prefix only)")
+flags.DEFINE_string('function', None, "[render_edit, relight]")
+flags.DEFINE_integer(
+    'sv_axis_i', 0, "along which axis we do spatially-varying edits")
+flags.DEFINE_float(
+    'sv_axis_min', -1.5, "axis minimum for spatially-varying edits")
+flags.DEFINE_float(
+    'sv_axis_max', 1.5, "axis maximum for spatially-varying edits")
+flags.DEFINE_string('tgt_albedo', None, "albedo edit name")
+flags.DEFINE_string('tgt_brdf', None, "BRDF edit name")
+flags.DEFINE_boolean('debug', False, "debug mode switch")
+FLAGS = flags.FLAGS
+
 logger = logutil.Logger(loggee="test")
 
 def compute_rgb_scales(ckpt):
@@ -114,9 +128,10 @@ def find_vq(vq_root):
 def main(_):
 
     root = '/home/zhonghongliang/vqnfr_pro/nerfvq_nfr3/'
-    scene = 'demo_1'
+    scene = 'drums_3072'
+    img_size = (512, 512)
+
     ckpt = root + 'output/train/'+scene+'_ref_nfr/lr5e-4/checkpoints/ckpt-5'
-    img_size = (420, 420)
 
     # Config
     config_ini = configutil.get_config_ini(ckpt)

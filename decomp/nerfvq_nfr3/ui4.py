@@ -34,7 +34,7 @@ class EditingWindow(QWidget):
                     compress=True)
         self.scpclient = SCPClient(ssh.get_transport(), socket_timeout=time_out)
 
-        self.default_views = ['batch000000000', 'batch000000001', 'batch000000002']
+        self.default_views = ['batch000000001', 'batch000000002', 'batch000000003']
         self.img_size = (280, 280)
         self.env_size = (200, 60)
 
