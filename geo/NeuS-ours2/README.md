@@ -25,6 +25,8 @@ Run the training with the defualt configs may require 48G GPU memory for some sc
 
 After training, we need to extract the geometry from different views.
 
+- To use our [pretrained weights](https://drive.google.com/drive/folders/1L-7B0KW7Jyv0gxJzBuTC9_KD5aBhM7Yx?usp=sharing), put the files under the `exp` folder to the `exp` folder of this directory.
+
 For `nerf`, `mat` and `hw` scenes, run:
 
 ```shell

@@ -2,17 +2,15 @@
 
 This is the code release for [VQ-NeRF Home Page](https://jtbzhl.github.io/VQ-NeRF.github.io/).
 
-* Now the code is still under testing.
-
 
 ## Acknowledgements
 
-Our code is mainly built upon the following projects. We sincerely thank their authors:
+Our code is mainly built upon the following projects. We sincerely thank the authors:
 - [NeRFactor](https://github.com/google/nerfactor)
 - [NeuS](https://github.com/Totoro97/NeuS)
 - [Sonnet](https://github.com/google-deepmind/sonnet)
 
-Also, we would like to thank all the collaborators who helped with this project.
+Also, we would like to thank all the collaborators who have helped with this project.
 
 
 ## Overview
@@ -44,6 +42,11 @@ There are five types of datasets:
 The coordinate system for `nerf`, `mat` and `hw` dataset follows NeRF-Blender, while the coordinate system for `dtu` and `ours` dataset follows NeuS-DTU.
 
 The `data/test_envs` stores a total of 16 envrionment maps for relighting. Eight of them are released by the [nvdiffrec](https://github.com/NVlabs/nvdiffrec), and the other eight are collected by us. For some types of the datasets, we flipped those illumination, as the 'upper' direction is reversed in those scenes.
+
+
+## Pretrained Weights
+
+The pretrained weights can be found [here](https://drive.google.com/drive/folders/1CZcpFUSitfyiVPQvkluibs-mf-laxJUE?usp=sharing). The `exp/` folder contains the weights for geometry reconstruction, and the `output/` folder contains the weights for decomposition and segmentation.
 
 
 ## Geometry Reconstruction
@@ -87,6 +90,8 @@ Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open 
 Aborted (core dumped)
 ```
 This suggests that some libs are missed in your CUDA. To avoid mess up your CUDA env, you can manually download and place them, following [this link](https://stackoverflow.com/questions/76646474/could-not-load-library-libcublaslt-so-12-error-libcublaslt-so-12-cannot-open) for solution.
+
+- We found that multiple factors of the running environment (e.g. tf-cuda-cudnn versions) could affect the floating point error in tf-gpu. And the accumulated error could influence the reproducibility of the experiments. To reproduce our results stably, you may download our [pretrained weights](https://drive.google.com/drive/folders/1CEH4WB70GYb4Swnj0In_dgz2xRqbAb-v?usp=sharing).
 
 (Optional) Check the environment:
 

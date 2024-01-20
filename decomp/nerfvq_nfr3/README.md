@@ -7,6 +7,15 @@ The training, testing and editing scripts are `train.sh`, `test.sh` and `edit.sh
 
 ## Training and Testing
 
+- To use our [pretrained weights](https://drive.google.com/drive/folders/1CEH4WB70GYb4Swnj0In_dgz2xRqbAb-v?usp=sharing), put the files under the `output` folder to the `output` folder of this directory. Then run the following command to correct the configured paths of the pretrained outputs:
+
+```shell
+python correct_config.py <decomp_proj_root>
+# e.g. python correct_config.py /home/zhonghongliang/vqnfr_pro_release/decomp
+```
+
+Scripts for training and testing:
+
 ```shell
 bash scripts/train.sh <scene_name> <gpu> # training
 bash scripts/test.sh <scene_name> <gpu> # testing
@@ -27,17 +36,19 @@ After training and testing:
 
 More explanations can be found in [scripts/](https://github.com/JiuTongBro/vqnerf_release/tree/main/decomp/nerfvq_nfr3/scripts).
 
+You can also adjust the dropout-ranking thresholds in `gen_main.py` to control the redundancy elimination.
+
 
 ## Evaluation
 
 ```shell
 # Firstly, you may need to configure the paths and flags in the python files
-python eval/metric_eval.py <dataset_type> ref_nfr # reconstruction, decomposition and relighting evaluation
-python eval/cluster_eval.py # segmentation evaluation, only the nerf dataset has GT.
-# e.g. python eval/metric_eval.py nerf ref_nfr
+python metric_eval.py <dataset_type> ref_nfr # reconstruction, decomposition and relighting evaluation
+python cluster_eval.py # segmentation evaluation, only the nerf dataset has GT.
+# e.g. python metric_eval.py nerf ref_nfr
 ```
 
-You can also use the `eval/vis.py` and `eval/cluster_vis.py` to convert the scores to `.csv` format.
+You can also use the `eval_vis/vis.py` and the `eval_vis/cluster_vis.py` to convert the scores to `.csv` format.
 
 
 ## Editing
@@ -46,13 +57,19 @@ To run our editing UI, you need a local computer and a remote server.
 
 First, prepare a local cache folder, download the generated `pd_vq/` folder to local and rename it to `pd_comps/`. Then download the `data/test_envs/vis/` to this local directory too.
 
-Then, run the following command on the server to make the server ready for editing:
+Then, configure the parameters and paths in the `main()` of `nerfactor/edit.py`, inlcuding:
+
+- `root`: the project root.
+- `scene`: the name of the scene.
+- `img_size`: the size of the images.
+
+Afterwards, run the following command on the server to make the server ready for editing:
 
 ```shell
 bash scripts/edit.sh <scene_name> <gpu>
 ```
 
-Afterwards, configure the parameters and paths in the `__init__()` of `ui4.py`, inlcuding:
+To run the local UI, first configure the parameters and paths in the `__init__()` of `ui4.py`, inlcuding:
 
 - `scene`: the edited scene name.
 - `self.local_folder`: the path of your local cache folder.
