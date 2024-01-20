@@ -38,6 +38,7 @@ class Runner:
 
         # Training parameters
         self.end_iter = self.conf.get_int('train.end_iter')
+        self.lr_end_iter = self.conf.get_int('train.lr_end_iter', default=-1)
         self.save_freq = self.conf.get_int('train.save_freq')
         self.report_freq = self.conf.get_int('train.report_freq')
         self.val_freq = self.conf.get_int('train.val_freq')
@@ -188,7 +189,9 @@ class Runner:
             learning_factor = self.iter_step / self.warm_up_end
         else:
             alpha = self.learning_rate_alpha
-            progress = (self.iter_step - self.warm_up_end) / (self.end_iter - self.warm_up_end)
+            if self.lr_end_iter < 0:
+                progress = (self.iter_step - self.warm_up_end) / (self.end_iter - self.warm_up_end)
+            else: progress = (self.iter_step - self.warm_up_end) / (self.lr_end_iter - self.warm_up_end)
             learning_factor = (np.cos(np.pi * progress) + 1.0) * 0.5 * (1 - alpha) + alpha
 
         for g in self.optimizer.param_groups:
