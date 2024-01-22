@@ -9,7 +9,7 @@ For `nerf`, `mat` and `hw` scenes, run:
 
 ```shell
 python nerf_runner.py --case <scene_name>
-# e.g. python nerf_runner.py --case drums_3072
+# e.g. python nerf_runner.py --case chair0_3072
 ```
 
 For `dtu` and `ours` scenes, run:
@@ -31,6 +31,7 @@ For `nerf`, `mat` and `hw` scenes, run:
 
 ```shell
 python gen_geo.py --case <scene_name>
+# e.g. python gen_geo.py --case chair0_3072
 ```
 
 For `dtu` and `ours` scenes, run:

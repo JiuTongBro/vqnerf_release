@@ -19,7 +19,7 @@ Scripts for training and testing:
 ```shell
 bash scripts/train.sh <scene_name> <gpu> # training
 bash scripts/test.sh <scene_name> <gpu> # testing
-# e.g. bash scripts/train.sh drums_3072 0
+# e.g. bash scripts/train.sh chair0_3072 0
 ```
 
 - If you run into problems with the `.sh` permissions (Permission denied), go to the corresponding folder, and run:
