@@ -45,7 +45,7 @@ You can also adjust the dropout-ranking thresholds in `gen_main.py` to control t
 # Firstly, you may need to configure the paths and flags in the python files
 python metric_eval.py <dataset_type> ref_nfr # reconstruction, decomposition and relighting evaluation
 python cluster_eval.py # segmentation evaluation, only the nerf dataset has GT.
-# e.g. python metric_eval.py nerf ref_nfr
+# e.g. python metric_eval.py mat ref_nfr
 ```
 
 You can also use the `eval_vis/vis.py` and the `eval_vis/cluster_vis.py` to convert the scores to `.csv` format.
