@@ -91,7 +91,7 @@ Aborted (core dumped)
 ```
 This suggests that some libs are missed in your CUDA. To avoid mess up your CUDA env, you can manually download and place them, following [this link](https://stackoverflow.com/questions/76646474/could-not-load-library-libcublaslt-so-12-error-libcublaslt-so-12-cannot-open) for solution.
 
-- We found that multiple factors of the running environment (e.g. tf-cuda-cudnn versions) could affect the floating point error in tf-gpu. And the accumulated error could slightly influence the reproducibility of the experiments. To reproduce our results stably, you may download our [pretrained weights](https://drive.google.com/drive/folders/1CZcpFUSitfyiVPQvkluibs-mf-laxJUE?usp=sharing).
+- We found that multiple factors of the running environment (e.g. tf-cuda-cudnn versions) could affect the floating point error in tf-gpu. And the accumulated error may slightly influence the reproducibility of the experiments. To reproduce our results stably, you may download our [pretrained weights](https://drive.google.com/drive/folders/1CZcpFUSitfyiVPQvkluibs-mf-laxJUE?usp=sharing).
 
 (Optional) Check the environment:
 
