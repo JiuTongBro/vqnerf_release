@@ -29,7 +29,7 @@ def glob_dir(root, start_with=None, end_with=None, key=None, ):
             if glob_flag: globed.append(f)
     return globed
 
-out_root = '/home/zhonghongliang/vqnfr_pro/nerfvq_nfr3/output/train'
+out_root = '/home/zhonghongliang/vqnfr_pro_release/decomp/nerfvq_nfr3/output/train'
 scene_roots = glob_dir(out_root, key='vq_nfr')
 for scene_root in scene_roots:
 
@@ -75,7 +75,7 @@ for scene_root in scene_roots:
         n_vq = len(vq_ids)
         if vis_flag: print('# Globbed VQ IDs ', vq_ids)
 
-
+        # This file can be extracted from the vq ckpts using the evaluation codes in train_nfr.py
         with open(join(scenr_epoch_root, 'vq_test_loss.json')) as f:
             vq_test_scores = json.load(f)
 
