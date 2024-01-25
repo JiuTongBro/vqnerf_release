@@ -153,6 +153,7 @@ def main(_):
         keep_recent_epochs = None  # keep all epochs
     ckptmanager = tf.train.CheckpointManager(
         ckpt, ckptdir, max_to_keep=keep_recent_epochs)
+    # training from a ckpt can result in warnings about unused variables in the old optimizer, can be ignored
     ckpt.restore(ckptmanager.latest_checkpoint)
     if ckptmanager.latest_checkpoint:
         logger.info(
