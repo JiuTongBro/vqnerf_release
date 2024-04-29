@@ -60,6 +60,8 @@ conda activate ./geo_env
 pip install -r NeuS-ours2/requirements.txt
 # You may need to manually update the torch-1.8.0 according to your cuda version
 pip install tensorboard
+# To make sure the correct version is installed
+pip install pyhocon==0.3.57
 ```
 
 Go to the code folder and link the data from the project root:
